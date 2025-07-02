@@ -600,7 +600,10 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  line-height: 1.6;
+  line-height: 1.6; 
+  overflow-wrap:break-word;
+  word-break:break-word;
+  max-width:100%
   display: -webkit-box;
   line-clamp: 4;
   -webkit-line-clamp: 4;
@@ -615,6 +618,9 @@ main {
 
 .modal-container {
   position: fixed;
+  max-width:90vw;
+  word-wrap:break-word;
+  overflow-wrap:break-word;
   top: 0;
   left: 0;
   width: 100%;
@@ -629,6 +635,14 @@ main {
   visibility: hidden;
 }
 
+@media(max-width:480px)
+{
+	.model-container{
+		max-width:90vw;
+		padding:20px;
+		font-size:14px;
+	}
+}
 .modal-container::-webkit-scrollbar { display: none; }
 
 .modal-container.active {
@@ -703,6 +717,7 @@ main {
   margin-bottom: 15px;
   box-shadow: var(--shadow-2);
 }
+
 
 .modal-img-wrapper > img { display: none; }
 
