@@ -1235,6 +1235,29 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
+/* Responsive modal view fix for small screens */
+@media (max-width: 480px) {
+  .modal-container {
+    max-width: 90vw;
+    padding: 20px;
+    font-size: 14px;
+    overflow-wrap: break-word;
+  }
+
+  .testimonials-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .testimonials-item .content-card {
+    padding: 15px;
+  }
+
+  .testimonials-list {
+    padding: 0 10px;
+  }
+}
+
 @media (min-width: 450px) {
 
   /**
